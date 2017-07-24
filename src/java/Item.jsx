@@ -48,6 +48,9 @@ export default class Item extends React.Component {
 	}
 
 	draw(){
+		if (this.state.ready){
+			return;
+		}
 		const ctx = this.props.canvas;
 		if (ctx === null){
 			return;
@@ -63,9 +66,6 @@ export default class Item extends React.Component {
 	}
 
 	load(){
-		if (this.state.ready){
-			return;
-		}
 		//load item images
 		const dest = 'assets/items/';
 		const src = ['bubble.png', 'hp.png', 'power.png', 'power_full.png', 'speed.png', 'speed_full.png' ];

@@ -24203,6 +24203,9 @@ var Item = function (_React$Component) {
 	}, {
 		key: 'draw',
 		value: function draw() {
+			if (this.state.ready) {
+				return;
+			}
 			var ctx = this.props.canvas;
 			if (ctx === null) {
 				return;
@@ -24220,9 +24223,6 @@ var Item = function (_React$Component) {
 	}, {
 		key: 'load',
 		value: function load() {
-			if (this.state.ready) {
-				return;
-			}
 			//load item images
 			var dest = 'assets/items/';
 			var src = ['bubble.png', 'hp.png', 'power.png', 'power_full.png', 'speed.png', 'speed_full.png'];
