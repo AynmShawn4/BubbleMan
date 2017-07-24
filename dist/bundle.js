@@ -24305,8 +24305,8 @@ var HelpScreen = function (_React$Component) {
 			ctx.fillText("Bubble Man", 250, 70);
 
 			ctx.font = "40px Arial";
-			ctx.fillText("Press Arrow keys to move", 150, 270);
-			ctx.fillText("Press Space keys to use bubble", 150, 370);
+			ctx.fillText("- Press Arrow keys to move", 150, 270);
+			ctx.fillText("- Press Space keys to use bubble", 150, 370);
 		}
 	}, {
 		key: 'componentWillReceiveProps',
