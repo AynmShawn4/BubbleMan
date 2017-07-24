@@ -80,7 +80,6 @@ export default class IntroScreen extends React.Component {
 			this.state.currentOption = (Math.abs(this.state.currentOption - 1) % 2);
 			change = true;
 		}
-
 		if (nextProps.input.left === nextProps.input.right === true){
 		} else if (nextProps.input.right === true){
 			this.state.selectedChar = ((this.state.selectedChar + 1) % 3);

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import CanvasComp from './CanvasComp.jsx';
 import IntroScreen from './Screens/IntroScreen.jsx';
 import GameScreen from './Screens/GameScreen.jsx';
-
+import HelpScreen from './Screens/HelpScreen.jsx';
 
 export default class Game extends React.Component {
 
@@ -137,6 +137,8 @@ export default class Game extends React.Component {
 			return 	(
 				<GameScreen canvas={CanvasComp} input={this.state} changeScreen={this.changeScreen}/>
 			);
+		} else if (this.state.screen === 2) {
+			return <HelpScreen canvas={CanvasComp} input={this.state} changeScreen={this.changeScreen}/>
 		} else {
 			return false;
 		}
