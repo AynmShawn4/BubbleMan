@@ -44,7 +44,6 @@ export default class Enemy extends React.Component {
 		const temp = enemyStats.bossEnemy[0];
 		this.state.enemies.push({moveSpeed: temp.moveSpeed,
 			 hp: temp.hp, type: 'boss', AI: new AI(this.state.tiles, 1)} )
-		console.log('gotta generate enemy according to level ');
 	}
 
 	load(){

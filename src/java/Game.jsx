@@ -111,7 +111,6 @@ export default class Game extends React.Component {
 	}
 
 	changeScreen(num, selected){
-		console.log("change Screen to "  + num);
 		this.setState({screen: num});
 		this.setState({selectedChar: selected});
 	}
